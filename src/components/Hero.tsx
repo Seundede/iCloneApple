@@ -49,7 +49,7 @@ const Hero = () => {
       <div id="cta" className="flex flex-col items-center translate-y-20 opacity-0">
         <a
           href="#highlights"
-          className="px-5 py-1 rounded-3xl bg-blue my-5 hover:bg-transparent border border-transparent hover:border hover:text-blue hover:border-blue"
+          className="px-5 py-1 rounded-3xl bg-blue my-5 hover:bg-transparent border border-transparent cursor-pointer hover:border hover:text-blue hover:border-blue"
         >
           Buy
         </a>
