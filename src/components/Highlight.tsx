@@ -2,6 +2,7 @@ import { useGSAP } from '@gsap/react';
 import { ChevronRightIcon, PlayCircleIcon } from '@heroicons/react/24/outline';
 import gsap from 'gsap';
 import React from 'react'
+import VideoCarousel from './VideoCarousel';
 
 const Highlight = () => {
     useGSAP(() => {
@@ -25,20 +26,21 @@ const Highlight = () => {
           <div className="flex flex-wrap items-end gap-5 ">
             <p
               id="links"
-              className="text-blue opacity-0 hover:underline cursor-pointer flex items-center text-xl -translate-y-5"
+              className="text-blue opacity-0 hover:underline cursor-pointer flex items-center text-xl md:-translate-y-5"
             >
               Watch the film
               <PlayCircleIcon className="h-5 w-5 ml-2" />
             </p>
             <p
               id="links"
-              className="text-blue opacity-0 hover:underline cursor-pointer flex items-center text-xl -translate-y-5 "
+              className="text-blue opacity-0 hover:underline cursor-pointer flex items-center text-xl md:-translate-y-5 "
             >
               Watch the event
               <ChevronRightIcon className="h-5 w-5 ml-2" />
             </p>
           </div>
         </div>
+        <VideoCarousel />
       </div>
     </section>
   );
