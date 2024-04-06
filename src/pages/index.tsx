@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import Highlight from "@/components/Highlight";
+import Model from "@/components/Model";
 import NavigationBar from "@/components/NavigationBar";
 import { Inter } from "next/font/google";
 
@@ -11,6 +12,7 @@ export default function Home() {
       <NavigationBar />
       <Hero />
       <Highlight />
+      <Model />
     </main>
   );
 }

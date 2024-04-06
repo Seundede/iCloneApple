@@ -22,15 +22,15 @@ const Hero = () => {
     };
   }, []);
   useGSAP(() => {
-    gsap.to("#title", { opacity: 1, delay: 2 });
-    gsap.to('#cta', {opacity:1, delay: 2, y: -50})
+    gsap.to("#title", { opacity: 1, delay: 2});
+    gsap.to("#cta", { opacity: 1, delay: 2, y: -50 });
   }, []);
   return (
     <section className="w-full h-[calc(100vh-60px)]">
       <div className="h-5/6 w-full flex flex-col items-center justify-center">
         <p
           id="title"
-          className="font-semibold text-center text-3xl text-gray-100 max-md:mb-10 opacity-0"
+          className="font-semibold text-center text-3xl text-gray-100 max-md:mb-10 opacity-0 translate-y-20"
         >
           iPhone 15 Pro
         </p>
@@ -46,7 +46,10 @@ const Hero = () => {
           </video>
         </div>
       </div>
-      <div id="cta" className="flex flex-col items-center translate-y-20 opacity-0">
+      <div
+        id="cta"
+        className="flex flex-col items-center translate-y-20 opacity-0"
+      >
         <a
           href="#highlights"
           className="px-5 py-1 rounded-3xl bg-blue my-5 hover:bg-transparent border border-transparent cursor-pointer hover:border hover:text-blue hover:border-blue"
